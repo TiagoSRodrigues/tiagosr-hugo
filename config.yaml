@@ -53,10 +53,10 @@ Menus:
     #   weight: 2
 
 params:
-  title: "Hugo Profile"
-  description: Text about my cool site
+  title: "Tiago Silva Rodrigues"
+  description: This is me 
   # staticPath: ""  # The path to serve the static files from
-  favicon: "/fav.png"
+  favicon: "content/imgs/favicon.png"
 
   # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
   # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
@@ -124,10 +124,10 @@ params:
   hero:
     enable: true
     intro: "Hi, my name is"
-    title: "Isabella."
+    title: "Tiago Silva Rodrigues"
     subtitle: "I build things for the web"
     content: "A passionate web app developer. I tend to make use of modern web technologies to build websites that looks great, feels fantastic, and functions correctly."
-    image: /images/hero.svg
+    image: https://avatars.githubusercontent.com/u/36556000?v=4
     bottomImage:
       enable: true
     # roundImage: true # Make hero image circular | default false
@@ -169,111 +169,58 @@ params:
 
   # Experience
   experience:
-    enable: true
-    # title: "Custom Name"
-    items:
-      - job: "Senior Software Developer"
-        company: "Facebook"
-        companyUrl: "https://example.com"
-        date: "Jan 2022 - present"
-        featuredLink:
-          enable: true
-          name: "View the project"
-          url: "https://example.com"
-        content: "I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city."
+      enable: true
+      items:
+        - job: "Systems Analyst"
+          company: "NOVO BANCO"
+          date: "July 2022 - Present"
+          content: "Current role focusing on DevOps, with tasks including API management and system monitoring."
+        
+        - job: "Application Analyst"
+          company: "NOVO BANCO"
+          date: "November 2020 - October 2022"
+          content: "Worked in Cloud Computing Department, specializing in management and infrastructure."
 
-      - job: "Software Developer"
-        company: "Amazon"
-        companyUrl: "https://example.com"
-        date: "Sep 2020 - Dec 2021"
-        featuredLink:
-          enable: true
-          url: "https://example.com"
-        info:
-          enable: true
-          content: I worked as a software developer for more than one year in Amazon.
-        content: |
-          I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.
+        - job: "Production Technician"
+          company: "Indorama Ventures PCL"
+          date: "November 2017 - October 2019"
+          content: "Controlled industrial processes in the purification area of terephthalic acid."
 
-          - Lead backend developer for a product.
-          - Created a frontend design for a product.
-
-      - job: "Junior Software Developer"
-        company: "Apple"
-        companyUrl: "https://example.com"
-        date: "Jan 2020 - Aug 2020"
-        info:
-          enable: false
-        featuredLink:
-          enable: true
-          url: "https://example.com"
-        content: |
-          I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.
-
-          - Lead backend developer for a product.
-          - Created a frontend design for a product.
-
-      - job: "UI/UX Designer"
-        company: "Netflix"
-        companyUrl: "https://example.com"
-        date: "June 2017 - Nov 2019"
-        featuredLink:
-          enable: true
-          url: "https://example.com"
-        content: |
-          I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.
-
-          - Lead backend developer for a product.
-          - Created a frontend design for a product.
-
-      - job: "Product Designer"
-        company: "Google"
-        companyUrl: "https://example.com"
-        date: "Feb 2016 - Mar 2017"
-        content: "I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city."
+        - job: "Operations Technician"
+          company: "ARTLANT"
+          date: "December 2015 - October 2019"
+          content: "Oversaw industrial process control and maintenance operations."
 
   # Education
   education:
     enable: true
-    # title: "Custom Name"
     index: false
     items:
-      - title: "Master of Business Administration"
+      - title: "Postgraduate, Software Engineering and Information Systems"
         school:
-          name: "University of California, Berkeley"
-          url: "https://example.org"
-        date: "2013 - 2015"
-        GPA: "3.8 out of 5.0"
+          name: "Instituto Superior Técnico"
+        date: "2019 - 2020"
         content: |-
-          Extracurricular Activities
-            - Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
-      - title: "Bachelor of Science in Computer Science"
-        school:
-          name: "Massachusetts Institute of Technology"
-          url: "https://example.org"
-        date: "2009 - 2013"
-        GPA: "3.9 out of 5.0"
-        content: |-
-          I Publiced two papers in the ACM SIGCHI Conference on Artificial Intelligence.
-          - [Fast and Accurate Object Detection with a Single Convolutional Neural Network](https://example.com)
-          - Face mask detection using a single convolutional neural network.
+          Skills: Problem Solving, Microsoft SQL Server, Java, JavaScript, Microsoft Office
 
-          Extracurricular Activities
-            - Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
-        featuredLink:
-          enable: true
-          name: "My academic record"
-          url: "https://example.com"
-      - title: "High School"
+      - title: "Master's, Industrial Engineering and Management"
         school:
-          name: "Thomas Jefferson High School for Science and Technology."
-          url: "https://example.org"
-        GPA: "4.2 out of 5.0"
-        featuredLink:
-          enable: true
-          url: "https://example.com"
+          name: "ISEL - Instituto Superior De Engenharia De Lisboa"
+        date: "2018 - 2020"
+        content: |-
+          Skills: Problem Solving, Microsoft Office
+
+      - title: "Bachelor's, Chemical Engineering"
+        school:
+          name: "ISEL - Instituto Superior De Engenharia De Lisboa"
+        date: "2014 - 2018"
+        content: |-
+          Skills: Chemical Engineering, Microsoft Office
+
+      - title: "Industrial Chemistry Course, Chemistry"
+        school:
+          name: "Escola Tecnológica do Litoral Alentejano"
+        date: "2007 - 2010"
 
   # Achievements
   achievements:
