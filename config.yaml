@@ -332,9 +332,9 @@ params:
     emailText: "Check out this site"
 
   datesFormat:
-    article: "Jan 2, 2006"
-    articleList: "Jan 2, 2006"
-    articleRecent: "Jan 2, 2006"
+    article: "2 jan 2006"
+    articleList: "2 Jan 2006"
+    articleRecent: "2 jan 2006"
 
 
   #customScripts: -| # You can add custom scripts which will be added before </body> tag
