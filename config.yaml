@@ -229,7 +229,7 @@ params:
   # Achievements
   Achievements:
     enable: true
-    title: "Professional Trainings and Certifications"
+    title: "Trainings"
     items:
       - title: "Legislação Laboral"
         content: "Certification in Labor Legislation."
