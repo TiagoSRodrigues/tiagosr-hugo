@@ -56,7 +56,7 @@ params:
   title: "Tiago Silva Rodrigues"
   description: This is me 
   # staticPath: ""  # The path to serve the static files from
-  favicon: "https://raw.githubusercontent.com/TiagoSRodrigues/tiagosr/3fa8ca9e2c3982ff73c050d852c637b52194ebe5/content/images/favicon.png"
+  favicon: content/images/favicon.png
 
   # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
   # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
@@ -127,7 +127,7 @@ params:
     enable: true
     intro: "Hi, my name is"
     title: "Tiago Silva Rodrigues"
-    subtitle: "Bridging Development and Operations"
+    subtitle: "DevOps engineer"
     content: |
       As a dedicated DevOps professional, I specialize in the seamless integration of development and operational practices. My expertise lies in governance, leveraging Airflow for workflow automation, and implementing robust monitoring solutions. I am passionate about utilizing modern technologies to create efficient, reliable, and scalable systems. My goal is to ensure that every web application not only looks great and feels fantastic but also operates flawlessly under the hood.
     image: https://avatars.githubusercontent.com/u/36556000?v=4
