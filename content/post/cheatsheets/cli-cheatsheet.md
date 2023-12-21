@@ -16,9 +16,10 @@ categories = [
 series = ["Themes Guide"]
 aliases = ["migrate-from-jekyl"]
 
-# CLi useful command 
 
-##
++++
+## CLi useful command
+
 | OS        | Utility             | Utility Meaning                    | Command            | Description                                                 | Example                                           | Example Description                                  |
 |-----------|---------------------|------------------------------------|--------------------|-------------------------------------------------------------|---------------------------------------------------|------------------------------------------------------|
 | Linux     | `lsblk`             | List Block Devices                 | `lsblk`            | Lists all block devices with their names, sizes, and mounts | `lsblk`                                           | Lists all block devices and their information        |
@@ -119,4 +120,3 @@ aliases = ["migrate-from-jekyl"]
 | Git       | `git push`          | Push Changes                       | `git push`         | Updates remote refs along with associated objects           | `git push origin master`                          | Updates the 'master' branch on the remote repository    |
 | Git       | `git branch`        | Create Branch                      | `git branch`       | Creates, lists, renames, and deletes branches               | `git branch new-branch`                           | Creates a new branch named 'new-branch'                 |
 | Git       | `git checkout`      | Switch Branch                      | `git checkout`     | Switches branches or restores working tree files            | `git checkout feature-branch`                     | Switches to the 'feature-branch' branch                 |
-This table provides a comprehensive guide for various command-line
