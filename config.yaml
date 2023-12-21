@@ -119,7 +119,7 @@ params:
       disableExperience: false
       disableEducation: false
       disableProjects: false
-      disableAchievements: true
+      disableAchievements: false
       disableContact: false
 
   # Hero
@@ -198,7 +198,7 @@ params:
   # Education
   education:
     enable: true
-    index: false
+    # index: false
     items:
       - title: "Postgraduate, Software Engineering and Information Systems"
         school:
@@ -226,8 +226,8 @@ params:
           name: "Escola Tecnológica do Litoral Alentejano"
         date: "2007 - 2010"
 
-  # Trainings
-  trainings:
+  # Achievements
+  Achievements:
     enable: true
     title: "Professional Trainings and Certifications"
     items:
@@ -248,23 +248,19 @@ params:
     enable: true
     # title: "Custom Name"
     items:
-      - title: Hugo Profile
-        content: A highly customizable and mobile first Hugo template for personal portfolio and blog.
-        image: /images/projects/profile.png
+      - title: Bullwhip simulator
+        content: A supply chain simulator, with adjustable Bullwhip effective.
         featured:
-          name: Demo
-          link: https://hugo-profile.netlify.app
+          name: Code
+          link: https://github.com/TiagoSRodrigues/Bullwhip
         badges:
-          - "Hugo"
-          - "Bootstrap"
-          - "Javascript"
+          - "Supply chain management"
+          - "python"
+          - "Industrial management"
         links:
-          - icon: fa fa-envelope
-            url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
           - icon: fab fa-github
-            url: https://github.com/gurusabarish/hugo-profile
-          - icon: fab fa-twitter
-            url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
+            url: https://github.com/TiagoSRodrigues/Bullwhip
+
 
       - title: Image Converter
         content: A web app to convert image to pdf, png to jpg, png to jpg and png to webp without database using django.
