@@ -198,7 +198,7 @@ params:
   # Education
   education:
     enable: true
-    # index: false
+    index: true
     items:
       - title: "Postgraduate, Software Engineering and Information Systems"
         school:
@@ -231,8 +231,6 @@ params:
     enable: true
     title: "Trainings"
     items:
-      - title: "Legislação Laboral"
-        content: "Certification in Labor Legislation."
       - title: "Public Speaking"
         content: "Training in effective public speaking skills."
       - title: "DevOps Foundation"
