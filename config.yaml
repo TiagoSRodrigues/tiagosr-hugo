@@ -15,7 +15,7 @@ outputs:
 Paginate: 3
 enableRobotsTXT: false
 # disqusShortname: your-disqus-shortname
-# googleAnalytics: G-MEASUREMENT_ID
+googleAnalytics: G-LGPMPKDSXP
 
 markup:
   goldmark:
@@ -56,7 +56,7 @@ params:
   title: "Tiago Silva Rodrigues"
   description: This is me 
   # staticPath: ""  # The path to serve the static files from
-  favicon: "content/imgs/favicon.png"
+  favicon: "content/images/favicon.png"
 
   # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
   # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
@@ -76,7 +76,7 @@ params:
 
   theme:
     # disableThemeToggle: true
-    # defaultTheme: "light" # dark
+    defaultTheme: "light" # dark
 
   font:
     fontSize: 1rem # default: 1rem
@@ -84,22 +84,24 @@ params:
     lineHeight: 1.5 # default: 1.5
     textAlign: left # default: left
 
-  # color preference
-  # color:
-  #   textColor:
-  #   secondaryTextColor:
-  #   backgroundColor:
-  #   secondaryBackgroundColor:
-  #   primaryColor:
-  #   secondaryColor:
+  # Light Mode Color Preferences
+  color:
+    textColor: "#2d2f36"  # Dark Navy for text
+    secondaryTextColor: "#4a5d70"  # Lighter Navy for secondary text
+    backgroundColor: "#ffffff"  # White for background
+    secondaryBackgroundColor: "#f0f2f5"  # Light Gray for secondary background
+    primaryColor: "#27496d"  # Deep Navy Blue for primary elements
+    secondaryColor: "#9ab3c2"  # Soft Blue for secondary elements
 
-  #   darkmode:
-  #     textColor:
-  #     secondaryTextColor:
-  #     backgroundColor:
-  #     secondaryBackgroundColor:
-  #     primaryColor:
-  #     secondaryColor:
+  # Dark Mode Color Preferences
+  darkmode:
+    textColor: "#ffffff"  # White for text
+    secondaryTextColor: "#d0d2d6"  # Light Gray for secondary text
+    backgroundColor: "#2d2f36"  # Dark Navy for background
+    secondaryBackgroundColor: "#4a5d70"  # Lighter Navy for secondary background
+    primaryColor: "#27496d"  # Deep Navy Blue for primary elements
+    secondaryColor: "#9ab3c2"  # Soft Blue for secondary elements
+
 
   # If you want to customize the menu, you can change it here
   navbar:
@@ -125,12 +127,13 @@ params:
     enable: true
     intro: "Hi, my name is"
     title: "Tiago Silva Rodrigues"
-    subtitle: "I build things for the web"
-    content: "A passionate web app developer. I tend to make use of modern web technologies to build websites that looks great, feels fantastic, and functions correctly."
+    subtitle: "Bridging Development and Operations"
+    content: |
+      As a dedicated DevOps professional, I specialize in the seamless integration of development and operational practices. My expertise lies in governance, leveraging Airflow for workflow automation, and implementing robust monitoring solutions. I am passionate about utilizing modern technologies to create efficient, reliable, and scalable systems. My goal is to ensure that every web application not only looks great and feels fantastic but also operates flawlessly under the hood.
     image: https://avatars.githubusercontent.com/u/36556000?v=4
     bottomImage:
       enable: true
-    # roundImage: true # Make hero image circular | default false
+    roundImage: true # Make hero image circular | default false
     button:
       enable: true
       name: "Resume"
@@ -140,12 +143,9 @@ params:
     socialLinks:
       fontAwesomeIcons:
         - icon: fab fa-github
-          url: https://example.com
-        - icon: fab fa-x-twitter
-          url: https://example.com
-      customIcons:
-        - icon: /fav.png
-          url: "https://example.com"
+          url: https://github.com/TiagoSRodrigues
+        - icon: fab fa-linkedin
+          url: https://www.linkedin.com/in/tiagosilvarodrigues
 
   # About
   about:
@@ -172,12 +172,12 @@ params:
       enable: true
       items:
         - job: "Systems Analyst"
-          company: "NOVO BANCO"
+          company: "novobanco"
           date: "July 2022 - Present"
           content: "Current role focusing on DevOps, with tasks including API management and system monitoring."
         
         - job: "Application Analyst"
-          company: "NOVO BANCO"
+          company: "novobanco"
           date: "November 2020 - October 2022"
           content: "Worked in Cloud Computing Department, specializing in management and infrastructure."
 
@@ -299,13 +299,13 @@ params:
     enable: true
     # title: "Custom Name"
     content: My inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!
-    email: gurusabarisha@gmail.com
+    email: info@tiagosr.eu
     btnName: Mail me
-    # formspree:
-    #   enable: true # `contact.email` value will be ignored
-    #   formId: abcdefgh # Take it from your form's endpoint, like 'https://formspree.io/f/abcdefgh'
-    #   emailCaption: "Enter your email address"
-    #   messageCaption: "Enter your message here"
+    formspree:
+      enable: true # `contact.email` value will be ignored
+      formId: xjvnbewq # Take it from your form's endpoint, like 'https://formspree.io/f/abcdefgh'
+      emailCaption: "Enter your email address"
+      messageCaption: "Enter your message here"
 
   footer:
     recentPosts:
@@ -315,12 +315,9 @@ params:
       enable: true
       disableFeaturedImage: false
     socialNetworks:
-      github: https://github.com
-      linkedin: https://linkedin.com
-      twitter: https://twitter.com
-      instagram: https://instagram.com
-      facebook: https://facebook.com
-
+      github: https://github.com/TiagoSRodrigues
+      linkedin: https://www.linkedin.com/in/tiagosilvarodrigues
+      
   # List pages like blogs and posts
   listPages:
     disableFeaturedImage: false
