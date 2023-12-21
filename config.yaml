@@ -90,7 +90,7 @@ params:
     secondaryTextColor: "#4a5d70"  # Lighter Navy for secondary text
     backgroundColor: "#ffffff"  # White for background
     secondaryBackgroundColor: "#f0f2f5"  # Light Gray for secondary background
-    primaryColor: "#27496d"  # Deep Navy Blue for primary elements
+    primaryColor: "#9ab3c2"  # Deep Navy Blue for primary elements
     secondaryColor: "#9ab3c2"  # Soft Blue for secondary elements
 
   # Dark Mode Color Preferences
