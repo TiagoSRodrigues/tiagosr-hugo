@@ -1,164 +1,237 @@
 baseURL: "https://tiagosr.eu"
-languageCode: "en-us"
+languageCode: en-us
+theme: hugo-theme-stack
+paginate: 5
 title: "Tiago Silva Rodrigues"
-theme: "hugo-theme-stack"
-paginate: 3
-enableRobotsTXT: false
-googleAnalytics: "G-LGPMPKDSXP"
+copyright: Tiago Silva Rodrigues
 
-outputs:
-  home:
-    - "HTML"
-    - "RSS"
-    - "JSON"
-  page:
-    - "HTML"
-    - "RSS"
+languages:
+    en:
+        languageName: "Tiago Silva Rodrigues"
+        title: Example Site
+        weight: 1
+        params:
+            description: "Tiago Silva Rodrigues"
+    pt-pt:
+        languageName: Português
+        title: "Tiago Silva Rodrigues"
+        weight: 2
+        params:
+            description: "Tiago Silva Rodrigues"
 
-markup:
-  goldmark:
-    renderer:
-      unsafe: true
+
+# Change it to your Disqus shortname before using
+# disqusShortname: hugo-theme-stack
+
+# GA Tracking ID
+googleAnalytics: G-LGPMPKDSXP
+
+# Theme i18n support
+# Available values: ar, bn, ca, de, el, en, es, fr, hu, id, it, ja, ko, nl, pt-br, th, uk, zh-cn, zh-hk, zh-tw
+DefaultContentLanguage: en, pt-br
+
+# Set hasCJKLanguage to true if DefaultContentLanguage is in [zh-cn ja ko]
+# This will make .Summary and .WordCount behave correctly for CJK languages.
+hasCJKLanguage: false
+
+permalinks:
+    post: /p/:slug/
+    page: /:slug/
 
 params:
-  title: "Tiago Silva Rodrigues"
-  description: "This is me"
-  favicon: "https://raw.githubusercontent.com/TiagoSRodrigues/tiagosr/main/content/images/favicon.png"
-  useBootstrapCDN: false
-  mathjax: false
-  animate: true
-  theme:
-    defaultTheme: "light"
-  font:
-    fontSize: "1rem"
-    fontWeight: 400
-    lineHeight: 1.5
-    textAlign: "left"
-  color:
-    textColor: "#2d2f36"
-    secondaryTextColor: "#4a5d70"
-    backgroundColor: "#ffffff"
-    secondaryBackgroundColor: "#f0f2f5"
-    primaryColor: "#9ab3c2"
-    secondaryColor: "#9ab3c2"
-  darkmode:
-    textColor: "#ffffff"
-    secondaryTextColor: "#d0d2d6"
-    backgroundColor: "#2d2f36"
-    secondaryBackgroundColor: "#4a5d70"
-    primaryColor: "#27496d"
-    secondaryColor: "#c2ccd1"
-  navbar:
-    align: "ms-auto"
-    brandName: "Tiago S Rodrigues"
-    disableSearch: true
-    stickyNavBar:
-      enable: true
-      showOnScrollUp: true
-    menus:
-      disableAbout: false
-      disableExperience: false
-      disableEducation: false
-      disableProjects: false
-      disableAchievements: false
-      disableContact: false
-  hero:
-    enable: true
-    intro: "Hi, my name is"
-    title: "Tiago Silva Rodrigues"
-    subtitle: "DevOps engineer"
-    content: "As a dedicated DevOps professional, I specialize in the seamless integration of development and operational practices..."
-    image: "https://avatars.githubusercontent.com/u/36556000?v=4"
-    bottomImage:
-      enable: true
-    roundImage: true
-    socialLinks:
-      fontAwesomeIcons:
-        - icon: "fab fa-github"
-          url: "https://github.com/TiagoSRodrigues"
-        - icon: "fab fa-linkedin"
-          url: "https://www.linkedin.com/in/tiagosilvarodrigues"
-  about:
-    enable: true
-    title: "About Me"
-    image: "https://media.licdn.com/dms/image/C5603AQFaNr8XTWeUGA/profile-displayphoto-shrink_800_800/0/1559701280006?e=1708560000&v=beta&t=PZG2-gSCZXay0S-_J9yE4O3yfNKjze6CNIOwSyxLZOA"
-    content: "With a unique blend of expertise in chemical engineering and software engineering, I bring a diverse set of technical and management skills to the IT industry..."
-    skills:
-      enable: true
-      title: "Here are a few technologies I've been working with recently:"
-      items:
-        - "Apache Airflow"
-        - "OpenShift"
-        - "CheckMK"
-        - "Linux"
-        - "Docker"
-        - "GitHub"
-  experience:
-    enable: true
-    items:
-      - job: "Systems Analyst"
-        company: "novobanco"
-        date: "July 2022 - Present"
-        content: "Current role focusing on DevOps, with tasks including API management and system monitoring."
-      - job: "Application Analyst"
-        company: "novobanco"
-        date: "November 2020 - October 2022"
-        content: "Worked in Cloud Computing Department, specializing in management and infrastructure."
-      - job: "Production Technician"
-        company: "Indorama Ventures"
-        date: "November 2017 - October 2019"
-        content: "Controlled industrial processes in the purification area of terephthalic acid."
-      - job: "Operations Technician"
-        company: "Artlant PTA"
-        date: "December 2015 - October 2019"
-        content: "Oversaw industrial process control and maintenance operations."
-  education:
-    enable: true
-    index: false
-    items:
-      - title: "Postgraduate, Software Engineering and Information Systems"
-        school:
-          name: "Instituto Superior Técnico"
-        date: "2019 - 2020"
-        content: "Skills: Problem Solving, Microsoft SQL Server, Java, JavaScript, Microsoft Office"
-      - title: "Master's, Industrial Engineering and Management"
-        school:
-          name: "ISEL - Instituto Superior De Engenharia De Lisboa"
-        date: "2018 - 2020"
-        content: "Skills: Problem Solving, Microsoft Office"
-      - title: "Bachelor's, Chemical Engineering"
-        school:
-          name: "ISEL - Instituto Superior De Engenharia De Lisboa"
-        date: "2014 - 2018"
-        content: "Skills: Chemical Engineering, Microsoft Office"
-      - title: "Industrial Chemistry Course, Chemistry"
-        school:
-          name: "Escola Tecnológica do Litoral Alentejano"
-        date: "2007 - 2010"
-  # ... Add other sections like Achievements, Projects, Contact, Footer, etc.
+    mainSections:
+        - post
+    featuredImageField: image
+    rssFullContent: true
+    favicon:  # e.g.: favicon placed in `static/favicon.ico` of your site folder, then set this field to `/favicon.ico` (`/` is necessary)
 
-footer:
-  since: 2020
-  customText: ""
+    footer:
+        since: 1990
+        customText:
 
-dateFormat:
-  published: "Jan 02, 2006"
-  lastUpdated: "Jan 02, 2006 15:04 MST"
+    dateFormat:
+        published: 02 Jan  2006
+        lastUpdated: 02 Jan  2006 15:04 MST
 
-sidebar:
-  emoji: "🍥"
-  subtitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-  avatar:
-    enabled: true
-    local: true
-    src: "img/avatar.png"
+    sidebar:
+        emoji: 🍥
+        subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        avatar:
+            enabled: true
+            local: true
+            src: img/avatar.png
 
-article:
-  math: false
-  toc: true
-  readingTime: true
-  license:
-    enabled: true
-    default: "Licensed under CC BY-NC-SA 4.0"
+    article:
+        math: false
+        toc: true
+        readingTime: true
+        license:
+            enabled: true
+            default: Licensed under CC BY-NC-SA 4.0
 
-# ... Add additional sections as needed for the template
+    comments:
+        enabled: true
+        provider: disqus
+
+        disqusjs:
+            shortname:
+            apiUrl:
+            apiKey:
+            admin:
+            adminLabel:
+
+        utterances:
+            repo:
+            issueTerm: pathname
+            label:
+
+        remark42:
+            host:
+            site:
+            locale:
+
+        vssue:
+            platform:
+            owner:
+            repo:
+            clientId:
+            clientSecret:
+            autoCreateIssue: false
+
+        # # Waline client configuration see: https://waline.js.org/en/reference/component.html
+        # waline:
+        #     serverURL:
+        #     lang:
+        #     pageview:
+        #     emoji:
+        #         - https://unpkg.com/@waline/emojis@1.0.1/weibo
+        #     requiredMeta:
+        #         - name
+        #         - email
+        #         - url
+        #     locale:
+        #         admin: Admin
+        #         placeholder:
+
+        # twikoo:
+        #     envId:
+        #     region:
+        #     path:
+        #     lang:
+
+        # # See https://cactus.chat/docs/reference/web-client/#configuration for description of the various options
+        # cactus:
+        #     defaultHomeserverUrl: "https://matrix.cactus.chat:8448"
+        #     serverName: "cactus.chat"
+        #     siteName: "" # You must insert a unique identifier here matching the one you registered (See https://cactus.chat/docs/getting-started/quick-start/#register-your-site)
+
+        giscus:
+            repo:
+            repoID:
+            category:
+            categoryID:
+            mapping:
+            lightTheme:
+            darkTheme:
+            reactionsEnabled: 1
+            emitMetadata: 0
+
+        gitalk:
+            owner:
+            admin:
+            repo:
+            clientID:
+            clientSecret:
+
+        cusdis:
+            host:
+            id:
+    widgets:
+        homepage:
+            - type: search
+            - type: archives
+              params:
+                  limit: 5
+            - type: categories
+              params:
+                  limit: 10
+            - type: tag-cloud
+              params:
+                  limit: 10
+        page:
+            - type: toc
+
+    opengraph:
+        twitter:
+            # Your Twitter username
+            site:
+
+            # Available values: summary, summary_large_image
+            card: summary_large_image
+
+    defaultImage:
+        opengraph:
+            enabled: false
+            local: false
+            src:
+
+    colorScheme:
+        # Display toggle
+        toggle: true
+
+        # Available values: auto, light, dark
+        default: auto
+
+    imageProcessing:
+        cover:
+            enabled: true
+        content:
+            enabled: true
+
+### Custom menu
+### See https://docs.stack.jimmycai.com/configuration/custom-menu.html
+### To remove about, archive and search page menu item, remove `menu` field from their FrontMatter
+menu:
+    main: []
+
+    social:
+        - identifier: github
+          name: GitHub
+          url: https://github.com/TiagoSRodrigues/Bullwhip
+          params:
+              icon: brand-github
+
+        - identifier: linkedin
+          name: LinkedIn
+          url: https://www.linkedin.com/in/tiagosilvarodrigues
+          params:
+              icon: brand-linkedin
+
+related:
+    includeNewer: true
+    threshold: 60
+    toLower: false
+    indices:
+        - name: tags
+          weight: 100
+
+        - name: categories
+          weight: 200
+
+markup:
+    goldmark:
+        renderer:
+            ## Set to true if you have HTML content inside Markdown
+            unsafe: true
+    tableOfContents:
+        endLevel: 4
+        ordered: true
+        startLevel: 2
+    highlight:
+        noClasses: false
+        codeFences: true
+        guessSyntax: true
+        lineNoStart: 1
+        lineNos: true
+        lineNumbersInTable: true
+        tabWidth: 4
